@@ -1,0 +1,87 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #F3E0D1; /* Cream Beige */
+    color: #4E4A41; /* Dark text color */
+}
+
+header {
+    background-color: #F3E0D1; /* Light Brown */
+    padding: 20px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #9B1B30; /* Burgundy */
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #D2B49F; /* Light Brown on hover */
+}
+
+footer {
+    background-color: #F3E0D1; /* Light Brown */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Layout for each page */
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Marquee Styling */
+.marquee-container {
+    background-color: #BE6674; /* Light Brown */
+    color: #9B1B30; /* Burgundy */
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-text {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+}
+
+/* Keyframes to animate the marquee */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Home Banner */
+.home-banner h1 {
+    color: #9B1B30; /* Burgundy */
+    margin-bottom: 20px;
+}
+
+.home-banner p {
+    font-size: 1.2em;
+    color: #4E4A41; /* Dark text */
+}

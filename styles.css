@@ -1,0 +1,111 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #F5DDE0; /* Cream Beige */
+    color: #BE6674; /* Dark text color */
+}
+
+header {
+    background-color: #F5DDE0; /* Light Brown */
+    padding: 20px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #D0637C; /* Burgundy */
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #BE6674; /* Light Brown on hover */
+}
+
+.image-container {
+    display: flex;         /* Use flexbox to arrange the images horizontally */
+    justify-content: center; /* Center images horizontally */
+    gap: 20px;             /* Space between images */
+    margin-top: 50px;      /* Space above the images */
+}
+
+/* Style for each image */
+.image {
+    width: 150px;        /* Set the width */
+    height: 150px;       /* Set the height */
+    object-fit: cover;   /* Maintain aspect ratio of the image while filling the box */
+    cursor: pointer;     /* Change cursor to pointer when hovering */
+    transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+/* Add hover effect to make the image enlarge a little */
+.image:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+
+footer {
+    background-color: #F5DDE0; /* Light Brown */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Layout for each page */
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Marquee Styling */
+.marquee-container {
+    background-color: #EABEC3; /* Light Brown */
+    color: #D0637C; /* Burgundy */
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-text {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+}
+
+/* Keyframes to animate the marquee */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Home Banner */
+.home-banner h1 {
+    color: #D0637C; /* Burgundy */
+    margin-bottom: 20px;
+}
+
+.home-banner p {
+    font-size: 1.2em;
+    color: #BE6674; /* Dark text */
+}
+<script src="script.js"></script>
+
